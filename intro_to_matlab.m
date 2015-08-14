@@ -27,7 +27,7 @@
 
 
 %% 2. Variables
-% 
+%
 % Variables can be assigned (like in any other programming language) using
 % an equal sign
 %
@@ -112,3 +112,47 @@
 % the vector "x"
 
 
+%% 6. Linear Algebra
+
+% given a system of linear equations:
+%
+%     2x + y  =  13
+%     x  - 3y = -18
+%
+% we can solve it by formatting the problem as
+%
+%     Ax = b
+%
+
+% create the matrix A and vector b
+%A = [2 1; 1 -3];
+%b = [13; -18];
+
+% solve for x using the "\" operator
+%x = A \ b
+
+
+%-----------------
+% other common operators are also available, e.g.,
+% dot products
+
+% create two vectors of the same length and calculate
+% their dot product
+%a = [1 2 3];
+%b = [1 2 3];
+%dot(a, b)
+
+% alternatively, you can calculate the dor product
+% by transposing one of the vectors from a row to
+% column vector
+%
+%   a = [1 2 3]
+%   b = [1 2 3]
+%
+%   a * b' = [1 2 3] * [ 1
+%                        2
+%                        3 ]
+%
+% = [1 2 3];
+%b = [1 2 3];
+%a * b'
